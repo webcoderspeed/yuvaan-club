@@ -15,7 +15,6 @@ import {
 	DialogContent,
 	DialogDescription,
 	DialogHeader,
-	DialogTitle,
 	DialogTrigger,
 } from '@/components/ui/dialog';
 
@@ -23,21 +22,15 @@ export default function Component() {
 	return (
 		<div className='min-h-screen bg-background'>
 			<Dialog>
-				<DialogContent className='overflow-y-scroll h-[34rem]'>
-					<DialogHeader>
-						<DialogTitle className='tilt-neon'>
-							Thank you for your kindness and support—it means everything to me.
-						</DialogTitle>
+				<DialogContent className='overflow-y-scroll h-[40rem]'>
+					<DialogHeader className='mt-6'>
+			
 						<DialogDescription>
-							<p className='font-bold text-black my-4'>
-								Bank Account Transfer:
-							</p>
-
 							<table className='min-w-full table-auto'>
 								<tbody>
 									<tr className='border-b'>
 										<td className='px-4 py-2 text-sm  text-black font-extrabold'>
-											Bank Name:
+											Bank Name
 										</td>
 										<td className='px-4 py-2 text-sm'> Punjab & Sindh Bank</td>
 									</tr>
@@ -63,7 +56,7 @@ export default function Component() {
 								<div className='h-1 w-full bg-gray-200 my-6'></div>
 							</div>
 
-							<table className='min-w-full table-auto'>
+							<table className='min-w-full table-auto mb-4'>
 								<tbody>
 									<tr className='border-b'>
 										<td className='px-4 py-2 text-sm  text-black font-extrabold'>
@@ -75,8 +68,8 @@ export default function Component() {
 							</table>
 
 							<Image
-								alt='Profile photo'
-								className='h-[30rem] w-full md:object-cover'
+								alt='Upi photo'
+								className='w-full'
 								src={UpiImg.src}
 								priority
 								height={800}
@@ -108,7 +101,7 @@ export default function Component() {
 					<div className='relative overflow-hidden rounded-lg'>
 						<Image
 							alt='Profile photo'
-							className='h-96 md:h-full w-full md:object-cover'
+							className='h-96 md:h-[32rem] w-full rounded-lg'
 							src={RiteshImg.src}
 							priority
 							height={800}
@@ -117,7 +110,7 @@ export default function Component() {
 					</div>
 					<div className='flex flex-col gap-6'>
 						<div className='space-y-2'>
-							<h1 className='text-3xl font-bold tracking-tight text-[#115991]'>
+							<h1 className='text-3xl font-bold tracking-tight text-[#333]'>
 								Ritesh Singh Bisht
 							</h1>
 							<p className='text-xl text-slate-700 '>
@@ -136,55 +129,57 @@ export default function Component() {
 								, in Bengaluru. Your contribution would be of real help.
 							</p>
 						</div>
-						<Button
-							className='bg-[#347319] hover:bg-[#4A7328]'
-							size='lg'
-						>
-							<DialogTrigger className='flex items-center'>
+						<DialogTrigger className='flex items-center w-full'>
+							<Button
+								className='bg-[#347319] hover:bg-[#4A7328] w-full'
+								size='lg'
+							>
 								<Globe
 									className='mr-2 h-12 w-12'
 									size={32}
 								/>
 								<span className='font-bold text-xl'>Contribute</span>
-							</DialogTrigger>
-						</Button>
+							</Button>
+						</DialogTrigger>
 						<p className='text-muted-foreground'>
-							Ritesh, born in 2002 in Wan village, Chamoli, Uttarakhand, India,
-							comes from a family of four siblings with strong farming roots.
-							Raised in the mountains, Ritesh developed a passion for physical
-							activity from a young age, discovering his love for amateur boxing
-							at 13. This early interest in the sport paved the way for his
-							transition to professional boxing in 2023, marking the beginning
-							of his promising career.
+							<span className='font-bold'>Ritesh</span>, born in 2002 in Wan
+							village, Chamoli, Uttarakhand, India, comes from a family of four
+							siblings with strong farming roots. Raised in the mountains,
+							Ritesh developed a passion for physical activity from a young age,
+							discovering his love for amateur boxing at 13. This early interest
+							in the sport paved the way for his transition to professional
+							boxing in 2023, marking the beginning of his promising career.
 						</p>
 						<div className='overflow-x-auto'>
 							<table className='min-w-full table-auto'>
 								<tbody>
 									<tr className='border-b'>
-										<td className='px-4 py-2 text-sm font-medium text-black font-extrabold'>
+										<td className='px-4 py-2 text-sm text-black font-extrabold'>
 											Age
 										</td>
-										<td className='px-4 py-2 text-sm'>22</td>
+										<td className='px-4 py-2 text-sm '>22</td>
 									</tr>
 
 									<tr className='border-b'>
-										<td className='px-4 py-2 text-sm font-medium text-black font-extrabold'>
+										<td className='px-4 py-2 text-sm text-black font-extrabold'>
 											India Rank
 										</td>
-										<td className='px-4 py-2 text-sm'>8</td>
+										<td className='px-4 py-2 text-sm '>8</td>
 									</tr>
 									<tr className='border-b'>
-										<td className='px-4 py-2 text-sm font-medium text-black font-extrabold'>
+										<td className='px-4 py-2 text-sm text-black font-extrabold'>
 											Pro Record
 										</td>
-										<td className='px-4 py-2 text-sm'>4-0-0</td>
+										<td className='px-4 py-2 text-sm '>4-0-0</td>
 									</tr>
 
 									<tr className='border-b'>
-										<td className='px-4 py-2 text-sm font-medium text-black font-extrabold'>
+										<td className='px-4 py-2 text-sm text-black font-extrabold'>
 											Division
 										</td>
-										<td className='px-4 py-2 text-sm'>Light Heavy (79 kg)</td>
+										<td className='px-4 py-2 text-sm '>
+											Light Heavy (79 kg)
+										</td>
 									</tr>
 								</tbody>
 							</table>
