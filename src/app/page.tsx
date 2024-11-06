@@ -17,6 +17,7 @@ import {
 	DialogDescription,
 	DialogHeader,
 	DialogTrigger,
+	DialogTitle
 } from '@/components/ui/dialog';
 
 
@@ -38,7 +39,7 @@ export default function Page() {
 			<Dialog>
 				<DialogContent className='overflow-y-scroll h-[40rem]'>
 					<DialogHeader className='mt-6'>
-			
+						<DialogTitle className='text-center w-full mb-2'>Thank you 🙏</DialogTitle>
 						<DialogDescription>
 							<table className='min-w-full table-auto'>
 								<tbody>
@@ -111,7 +112,7 @@ export default function Page() {
 						</Link>
 					</nav>
 				</header>
-				<main className='container grid gap-6 pb-8 pt-6 px-4 md:grid-cols-2 mx-auto w-full md:gap-8'>
+				<main className='container grid gap-6 pb-8 mt-2 md:pt-6 px-4 md:grid-cols-2 mx-auto w-full md:gap-8'>
 					<div className='relative overflow-hidden rounded-lg'>
 						<Image
 							alt='Profile photo'
@@ -191,9 +192,7 @@ export default function Page() {
 										<td className='px-4 py-2 text-sm text-black font-extrabold'>
 											Division
 										</td>
-										<td className='px-4 py-2 text-sm '>
-											Light Heavy (79 kg)
-										</td>
+										<td className='px-4 py-2 text-sm '>Light Heavy (79 kg)</td>
 									</tr>
 								</tbody>
 							</table>
@@ -262,6 +261,7 @@ export default function Page() {
 							<Link
 								href='https://www.instagram.com/doonfightclub/'
 								className='text-[#cc0000] font-bold'
+								target='_blank'
 							>
 								Doon Fight Club
 							</Link>
@@ -272,6 +272,7 @@ export default function Page() {
 							<Link
 								href='http://auotam.com/'
 								className='text-[#cc0000] font-bold'
+								target='_blank'
 							>
 								AUOTAM
 							</Link>
