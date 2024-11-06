@@ -9,6 +9,7 @@ import BoxRecImg from '../../public/boxrec.jpg';
 import InstaImg from '../../public/Instagram_icon.png.webp';
 import UpiImg from '../../public/upi.jpeg';
 import { Globe } from 'lucide-react';
+import type { Metadata } from 'next';
 
 import {
 	Dialog,
@@ -18,7 +19,20 @@ import {
 	DialogTrigger,
 } from '@/components/ui/dialog';
 
-export default function Component() {
+
+export const metadata: Metadata = {
+	title: 'Yuvaan Club',
+	description: `Ritesh born in 2002 in Wan
+							village, Chamoli, Uttarakhand, India, comes from a family of four
+							siblings with strong farming roots. Raised in the mountains,
+							Ritesh developed a passion for physical activity from a young age,
+							discovering his love for amateur boxing at 13. This early interest
+							in the sport paved the way for his transition to professional
+							boxing in 2023, marking the beginning of his promising career`,
+};
+ 
+
+export default function Page() {
 	return (
 		<div className='min-h-screen bg-background'>
 			<Dialog>
